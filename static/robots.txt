@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://da-head.github.io/sitemap.xml

@@ -1,0 +1,47 @@
+<!--custom font example-->
+<!--<style>-->
+<!--        /// Overwrite CSS variable-->
+<!--    :root {-->
+<!--        &#45;&#45;article-font-family: "Merriweather", var(&#45;&#45;base-font-family);-->
+<!--    }-->
+<!--</style>-->
+
+<!--<script>-->
+<!--        (function () {-->
+<!--            const customFont = document.createElement('link');-->
+<!--            customFont.href = "https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap";-->
+
+<!--            customFont.type = "text/css";-->
+<!--            customFont.rel = "stylesheet";-->
+
+<!--            document.head.appendChild(customFont);-->
+<!--        }());-->
+<!--</script>-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Noto+Sans+KR:wght@400&display=swap" rel="stylesheet">
+<style>
+    @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+        /*/// Overwrite CSS variable*/
+        /* 커스텀 폰트 Pretendard
+        참고: https://github.com/orioncactus/pretendard?fbclid=IwAR23hPNsiUD4Q1DLldv6VPZMgGxtZyrm9_zcc6rN4PKIaYNhQhfi9SqRtZ4*/
+        :root{
+            --body-background: #fafeff;
+            --base-font-family: Pretendard, 'Noto Sans KR', sans-serif;
+        }
+        .site-name{
+            --site-name-font-family: 'East Sea Dokdo', cursive;
+            font-family: var(--site-name-font-family);
+            font-size: 3.2rem !important;
+        }
+
+
+    .left-sidebar {
+        --sidebar-avatar-size: 200px;
+    }
+        figure.site-avatar{
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+</style>

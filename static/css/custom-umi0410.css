@@ -1,0 +1,163 @@
+/* Font 설정*/
+@import url(https://fonts.googleapis.com/css?family=Do+Hyeon);
+@import url(https://fonts.googleapis.com/css?family=Nanum+Gothic);
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(https://fonts.googleapis.com/css2?family=Nanum+Brush+Script);
+
+/* 데스크탑에서 사용될 스타일을 먼저 작성합니다. */
+#body-inner{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+@media screen and (max-width: 768px) {
+    /* 모바일에 사용될 스트일 시트를 여기에 작성합니다. */
+    #body-inner{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+
+/*
+출처: https://offbyone.tistory.com/121 [쉬고 싶은 개발자]
+ */
+
+h1, h2, h3, h4, h5{
+    font-family: "Do Hyeon", sans-serif;
+}
+body{
+    font-family: "Nanum Gothic", sans-serif;
+}
+#logo span{
+    font-family: "Architects Daughter", sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+ul, ol{
+  margin: 0.6rem;
+  padding-inline-start: 8px;
+}
+h1{
+  text-transform: none;
+    font-size: 2.5rem;
+    line-height: 150%;
+}
+
+h2 {
+  font-size: 1.8rem;
+  line-height: 150% !important;
+  margin: 1.4rem 0 0.8rem 0;
+}
+
+h3 {
+  font-size: 1.4rem;
+  line-height: 150% !important;
+  margin: 1.0rem 0 0.6rem 0;
+}
+
+h4 {
+  font-size: 1.3rem;
+  line-height: 130% !important;
+  margin: 1.0rem 0 0.6rem 0;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 110% !important;
+  margin: 1.0rem 0 0.6rem 0;
+}
+
+
+#body, #chapter, #body p, #chapter p, body, body p{
+    line-height: 180%;
+    font-size: 18px !important;
+}
+
+#chapter p{
+  text-align: left;
+}
+
+#shortcuts h3{
+  display: none;
+}
+
+#shortcuts ul>li>a{
+  line-height: 2rem;
+  font-size: 1.1rem;
+}
+
+#body img, #body .video-container {
+  margin: 1rem auto;
+}
+
+blockquote {
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 5px;
+  margin-inline-end: 5px;
+  padding-left: 0.1rem;
+  margin-bottom: 0.4rem;
+}
+
+blockquote p{
+    font-size: .8rem;
+    margin: .8rem;
+}
+
+
+
+
+nav#TableOfContents {
+    font-size: 18px !important;
+    max-height: 85vh;
+    overflow: auto;
+    padding: 15px !important;
+}
+
+#sidebar ul > li > ul > li{
+  padding-left: 0.4rem;
+}
+
+.progress{
+  margin-top: 40px;
+  background: #fcfcfc;
+  border-radius: 10px;
+}
+
+#TableOfContents > ul > li > ul > li {
+  margin-left: 8px; 
+}
+
+#TableOfContents > ul > li > a   {
+  padding: 0px; 
+}
+
+/**
+ * learn theme 관련. 하지만 컬러랑은 무관
+ */
+
+ul.topics > li > a, #shortcuts > ul > li > a{
+    font-family: "Nanum Gothic", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: bold;
+}
+
+ul.topics>li>ul>li, ul.topics>li>ul>li[class="visited"] {
+  padding: 0px !important;
+}
+
+/* e.g Blog > Go > 이하로는 표시 안함.*/
+ul.topics>li>ul>li>ul{
+    display: none !important;
+}
